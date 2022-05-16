@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun-triangles | areaOfTriangle</title>
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: blueviolet;
+            color: white;
+            height: 5rem;
+            padding: 0.5rem;
+        }
+
+        nav {
+            text-align: right;
+            display: block;
+        }
+
+        li {
+            display: inline;
+            align-items: flex-end;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            margin-left: 1rem;
+            text-align: right;
+        }
+
+        main {
+            width: 50rem;
+            margin: 1rem auto;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .heading h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 1rem 0 1rem 0;
+        }
+
+        label {
+            display: block;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: blueviolet;
+        }
+
+        input {
+            display: block;
+            margin: 1rem auto;
+            width: 15rem;
+            height: 2rem;
+            font-size: 1.2rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: 2px solid blueviolet;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 1.5rem auto;
+            width: 7rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: none;
+            background-color: blueviolet;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .formula {
+            text-align: center;
+        }
+        .formula h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .formula p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        #area-output {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Fun with triangles</h1>
+            <nav class="navbar">
+                <div>
+                    <ul>
+                        <li><a href="./index.html">Is Triangle?</a></li>
+                        <li><a href="./quiz.html">Quiz</a></li>
+                        <li><a href="./hypotenuse.html">Hypoyenuse</a></li>
+                        <li><a href="./areaoftriangle.html">Area of Triangle</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="heading">
+                <h1>Calculate area of triangle</h1>
+            </section>
+            <form action="" class="area-form">
+                <div class="baseIp">
+                    <label for="">Enter the base value (a) =</label>
+                    <input type="number" id="val1">
+                </div>
+                <div class="heightIp">
+                    <label for="">Enter the height value (b) =</label>
+                    <input type="number" id="val2">
+                </div>
+            </form>
+            <button id="calBtn">Calculate</button>
+            <div class="formula">
+                <h2>Area of Formula</h2>
+                <p>1/2 (base * height)</p>
+            </div>
+            <p id="area-output"></p>
+    </div>
+    </main>
+
+    <footer>
+        &copy; | 2022 | all rights are reserved
+    </footer>
+    <script src="./areaoftriangle.js"></script>
+</body>
+
+</html>
